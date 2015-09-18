@@ -1,0 +1,5 @@
+c:\users\caarroniz\documents\visual studio 2013\Projects\Cotemar CodeUI\Cotemar CodeUI\bin\Debug\Cotemar CodeUI.dll
+c:\users\caarroniz\documents\visual studio 2013\Projects\Cotemar CodeUI\Cotemar CodeUI\bin\Debug\Cotemar CodeUI.pdb
+c:\users\caarroniz\documents\visual studio 2013\Projects\Cotemar CodeUI\Cotemar CodeUI\obj\Debug\Cotemar CodeUI.csprojResolveAssemblyReference.cache
+c:\users\caarroniz\documents\visual studio 2013\Projects\Cotemar CodeUI\Cotemar CodeUI\obj\Debug\Cotemar CodeUI.dll
+c:\users\caarroniz\documents\visual studio 2013\Projects\Cotemar CodeUI\Cotemar CodeUI\obj\Debug\Cotemar CodeUI.pdb
