@@ -298,6 +298,19 @@ namespace Cotemar_CodeUI
             Mouse.Click(uIItemHyperlink, new Point(6, 21));
         }
         
+        /// <summary>
+        /// Comprobra que existe Compresor Seleccionado
+        /// </summary>
+        public void ComprobrarSeleccionDeEquipo()
+        {
+            #region Variable Declarations
+            HtmlDiv uIElequipoesobligatoriPane = this.UICOTEMARInternetExploWindow.UICOTEMARDocument4.UIFormAgregarEquipoCustom3.UIElequipoesobligatoriPane;
+            #endregion
+
+            // Verify that the 'InnerText' property of 'El equipo es obligatorio. Equipo solic' pane contains 'Compresor de 34 DBi '
+            StringAssert.Contains(uIElequipoesobligatoriPane.InnerText, this.ComprobrarSeleccionDeEquipoExpectedValues.UIElequipoesobligatoriPaneInnerText, "No  se selecciono equipo");
+        }
+        
         #region Properties
         public virtual IngresarCotemarParams IngresarCotemarParams
         {
@@ -419,6 +432,18 @@ namespace Cotemar_CodeUI
             }
         }
         
+        public virtual ComprobrarSeleccionDeEquipoExpectedValues ComprobrarSeleccionDeEquipoExpectedValues
+        {
+            get
+            {
+                if ((this.mComprobrarSeleccionDeEquipoExpectedValues == null))
+                {
+                    this.mComprobrarSeleccionDeEquipoExpectedValues = new ComprobrarSeleccionDeEquipoExpectedValues();
+                }
+                return this.mComprobrarSeleccionDeEquipoExpectedValues;
+            }
+        }
+        
         public UICOTEMARInternetExploWindow UICOTEMARInternetExploWindow
         {
             get
@@ -452,6 +477,8 @@ namespace Cotemar_CodeUI
         private EtiquetadeError3ExpectedValues mEtiquetadeError3ExpectedValues;
         
         private BuscarComParams mBuscarComParams;
+        
+        private ComprobrarSeleccionDeEquipoExpectedValues mComprobrarSeleccionDeEquipoExpectedValues;
         
         private UICOTEMARInternetExploWindow mUICOTEMARInternetExploWindow;
         #endregion
@@ -619,6 +646,21 @@ namespace Cotemar_CodeUI
         /// Type 'Com' in 'value' text box
         /// </summary>
         public string UIValueEditText = "Com";
+        #endregion
+    }
+    
+    /// <summary>
+    /// Parameters to be passed into 'ComprobrarSeleccionDeEquipo'
+    /// </summary>
+    [GeneratedCode("Coded UITest Builder", "12.0.31101.0")]
+    public class ComprobrarSeleccionDeEquipoExpectedValues
+    {
+        
+        #region Fields
+        /// <summary>
+        /// Verify that the 'InnerText' property of 'El equipo es obligatorio. Equipo solic' pane contains 'Compresor de 34 DBi '
+        /// </summary>
+        public string UIElequipoesobligatoriPaneInnerText = "Compresor de 34 DBi ";
         #endregion
     }
     
@@ -1733,6 +1775,18 @@ namespace Cotemar_CodeUI
                 return this.mUIRegresaraBandejadeSoHyperlink;
             }
         }
+        
+        public UIFormAgregarEquipoCustom3 UIFormAgregarEquipoCustom3
+        {
+            get
+            {
+                if ((this.mUIFormAgregarEquipoCustom3 == null))
+                {
+                    this.mUIFormAgregarEquipoCustom3 = new UIFormAgregarEquipoCustom3(this);
+                }
+                return this.mUIFormAgregarEquipoCustom3;
+            }
+        }
         #endregion
         
         #region Fields
@@ -1751,6 +1805,8 @@ namespace Cotemar_CodeUI
         private HtmlButton mUICancelarButton;
         
         private HtmlHyperlink mUIRegresaraBandejadeSoHyperlink;
+        
+        private UIFormAgregarEquipoCustom3 mUIFormAgregarEquipoCustom3;
         #endregion
     }
     
@@ -2035,6 +2091,54 @@ namespace Cotemar_CodeUI
             this.SearchProperties[UITestControl.PropertyNames.Name] = "formAgregarEquipo";
             this.FilterProperties["Class"] = "ng-valid-min ng-invalid ng-invalid-required ng-valid-pattern ng-valid-maxlength n" +
                 "g-submitted ng-dirty";
+            this.FilterProperties["ControlDefinition"] = "name=\"formAgregarEquipo\" class=\"ng-valid";
+            this.FilterProperties["TagInstance"] = "2";
+            this.WindowTitles.Add("COTEMAR");
+            #endregion
+        }
+        
+        #region Properties
+        public HtmlDiv UIElequipoesobligatoriPane
+        {
+            get
+            {
+                if ((this.mUIElequipoesobligatoriPane == null))
+                {
+                    this.mUIElequipoesobligatoriPane = new HtmlDiv(this);
+                    #region Search Criteria
+                    this.mUIElequipoesobligatoriPane.SearchProperties[HtmlDiv.PropertyNames.Id] = null;
+                    this.mUIElequipoesobligatoriPane.SearchProperties[HtmlDiv.PropertyNames.Name] = null;
+                    this.mUIElequipoesobligatoriPane.FilterProperties[HtmlDiv.PropertyNames.InnerText] = "El equipo es obligatorio. \r\nEquipo solic";
+                    this.mUIElequipoesobligatoriPane.FilterProperties[HtmlDiv.PropertyNames.Title] = null;
+                    this.mUIElequipoesobligatoriPane.FilterProperties[HtmlDiv.PropertyNames.Class] = "form-group";
+                    this.mUIElequipoesobligatoriPane.FilterProperties[HtmlDiv.PropertyNames.ControlDefinition] = "class=\"form-group\"";
+                    this.mUIElequipoesobligatoriPane.FilterProperties[HtmlDiv.PropertyNames.TagInstance] = "90";
+                    this.mUIElequipoesobligatoriPane.WindowTitles.Add("COTEMAR");
+                    #endregion
+                }
+                return this.mUIElequipoesobligatoriPane;
+            }
+        }
+        #endregion
+        
+        #region Fields
+        private HtmlDiv mUIElequipoesobligatoriPane;
+        #endregion
+    }
+    
+    [GeneratedCode("Coded UITest Builder", "12.0.31101.0")]
+    public class UIFormAgregarEquipoCustom3 : HtmlCustom
+    {
+        
+        public UIFormAgregarEquipoCustom3(UITestControl searchLimitContainer) : 
+                base(searchLimitContainer)
+        {
+            #region Search Criteria
+            this.SearchProperties["TagName"] = "FORM";
+            this.SearchProperties["Id"] = "formAgregarEquipo";
+            this.SearchProperties[UITestControl.PropertyNames.Name] = "formAgregarEquipo";
+            this.FilterProperties["Class"] = "ng-valid-min ng-invalid ng-invalid-required ng-valid-pattern ng-valid-maxlength n" +
+                "g-dirty";
             this.FilterProperties["ControlDefinition"] = "name=\"formAgregarEquipo\" class=\"ng-valid";
             this.FilterProperties["TagInstance"] = "2";
             this.WindowTitles.Add("COTEMAR");

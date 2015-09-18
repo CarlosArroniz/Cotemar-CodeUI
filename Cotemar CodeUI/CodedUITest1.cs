@@ -41,7 +41,9 @@ namespace Cotemar_CodeUI
             this.UIMap.EtiquetadeError2();
             this.UIMap.EtiquetadeError3();
             this.UIMap.BuscarCom();
+            this.UIMap.ComprobrarSeleccionDeEquipo();
             this.UIMap.SalirDeTodo();
+
         }
 
         #region Additional test attributes
