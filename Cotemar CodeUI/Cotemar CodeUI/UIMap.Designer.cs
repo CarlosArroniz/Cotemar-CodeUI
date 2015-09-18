@@ -23,12 +23,12 @@ namespace Cotemar_CodeUI
     using Keyboard = Microsoft.VisualStudio.TestTools.UITesting.Keyboard;
     using Mouse = Microsoft.VisualStudio.TestTools.UITesting.Mouse;
     using MouseButtons = System.Windows.Forms.MouseButtons;
-
-
+    
+    
     [GeneratedCode("Coded UITest Builder", "12.0.31101.0")]
     public partial class UIMap
     {
-
+        
         /// <summary>
         /// Hacer Login en Cotemar
         /// </summary>
@@ -52,7 +52,7 @@ namespace Cotemar_CodeUI
             // Click 'Entrar' button
             Mouse.Click(uIEntrarButton, new Point(152, 31));
         }
-
+        
         /// <summary>
         /// Assert_PanelDeControl - Use 'Assert_PanelDeControlExpectedValues' to pass parameters into this method.
         /// </summary>
@@ -65,7 +65,7 @@ namespace Cotemar_CodeUI
             // Verify that the 'InnerText' property of 'Panel de control' pane equals 'Panel de control'
             Assert.AreEqual(this.Assert_PanelDeControlExpectedValues.UIPaneldecontrolPane1InnerText, uIPaneldecontrolPane1.InnerText, "No estas en Panel de Contron");
         }
-
+        
         /// <summary>
         /// Ir a la pestaña de Solicitudes
         /// </summary>
@@ -78,7 +78,7 @@ namespace Cotemar_CodeUI
             // Click 'Solicitudes' link
             Mouse.Click(uISolicitudesHyperlink, new Point(103, 29));
         }
-
+        
         /// <summary>
         /// Comparar Bandeja de Solicitudes
         /// </summary>
@@ -91,7 +91,7 @@ namespace Cotemar_CodeUI
             // Verify that the 'InnerText' property of 'Bandeja de Solicitudes' pane equals 'Bandeja de Solicitudes'
             Assert.AreEqual(this.Assert_BandejaDeSolicitudesExpectedValues.UIBandejadeSolicitudesPane1InnerText, uIBandejadeSolicitudesPane1.InnerText, "No estas en la pestaña de Solicitudes");
         }
-
+        
         /// <summary>
         /// Ir a Crear Nueva Solicitud
         /// </summary>
@@ -104,7 +104,7 @@ namespace Cotemar_CodeUI
             // Click 'Nueva Solicitud' button
             Mouse.Click(uINuevaSolicitudButton, new Point(37, 24));
         }
-
+        
         /// <summary>
         /// Assert_CrearNuevaSolicitud - Use 'Assert_CrearNuevaSolicitudExpectedValues' to pass parameters into this method.
         /// </summary>
@@ -117,7 +117,7 @@ namespace Cotemar_CodeUI
             // Verify that the 'InnerText' property of 'Crear Nueva Solicitud' pane equals 'Crear Nueva Solicitud'
             Assert.AreEqual(this.Assert_CrearNuevaSolicitudExpectedValues.UICrearNuevaSolicitudPane1InnerText, uICrearNuevaSolicitudPane1.InnerText, "No estas en crear una nueva solicitud");
         }
-
+        
         /// <summary>
         /// ComprobarEstadoBotonAgregar - Use 'ComprobarEstadoBotonAgregarExpectedValues' to pass parameters into this method.
         /// </summary>
@@ -133,7 +133,7 @@ namespace Cotemar_CodeUI
             // Verify that the 'Enabled' property of 'Agregar Especificación de Equipo Incr' pane equals 'True'
             Assert.AreEqual(this.ComprobarEstadoBotonAgregarExpectedValues.UIAgregarEspecificacióPaneEnabled, uIAgregarEspecificacióPane.Enabled, "El boton no funciona");
         }
-
+        
         /// <summary>
         /// Crear Solicitud para abrir incremento de equipo
         /// </summary>
@@ -184,7 +184,7 @@ namespace Cotemar_CodeUI
             // Click 'Incremento' link
             Mouse.Click(uIIncrementoHyperlink, new Point(66, 14));
         }
-
+        
         /// <summary>
         /// comprombar que se encuentra en Incremento de quipo
         /// </summary>
@@ -197,7 +197,7 @@ namespace Cotemar_CodeUI
             // Verify that the 'DisplayText' property of '× Incremento de Equipo' pane contains 'Incremento de Equipo'
             StringAssert.Contains(uIIncrementodeEquipoPane.DisplayText, this.ComprobarIncrementoIncrementoDeEquipoExpectedValues.UIIncrementodeEquipoPaneDisplayText, "no estas en Incremento de Equipo");
         }
-
+        
         /// <summary>
         /// Click en boton agregar para mostrar etiquetas de error
         /// </summary>
@@ -210,7 +210,7 @@ namespace Cotemar_CodeUI
             // Click 'Agregar a la solicitud' button
             Mouse.Click(uIAgregaralasolicitudButton, new Point(102, 19));
         }
-
+        
         /// <summary>
         /// Comparar etiqueta de error1
         /// </summary>
@@ -223,7 +223,7 @@ namespace Cotemar_CodeUI
             // Verify that the 'DisplayText' property of 'El equipo es obligatorio.' pane equals 'El equipo es obligatorio.'
             Assert.AreEqual(this.EtiquetadeError1ExpectedValues.UIElequipoesobligatoriPaneDisplayText, uIElequipoesobligatoriPane.DisplayText, "NO existe etiqueta");
         }
-
+        
         /// <summary>
         /// Comprobar etiqueta2
         /// </summary>
@@ -236,7 +236,7 @@ namespace Cotemar_CodeUI
             // Verify that the 'InnerText' property of 'La cantidad requerida es obligatoria.' pane equals 'La cantidad requerida es obligatoria.'
             Assert.AreEqual(this.EtiquetadeError2ExpectedValues.UILacantidadrequeridaePaneInnerText, uILacantidadrequeridaePane.InnerText, "NO existe etiqueta");
         }
-
+        
         /// <summary>
         /// Comprobar etiqueta 3
         /// </summary>
@@ -249,7 +249,7 @@ namespace Cotemar_CodeUI
             // Verify that the 'InnerText' property of 'La fecha de término es obligatoria.' pane equals 'La fecha de término es obligatoria.'
             Assert.AreEqual(this.EtiquetadeError3ExpectedValues.UILafechadetérminoesobPaneInnerText, uILafechadetérminoesobPane.InnerText, "NO existe etiqueta");
         }
-
+        
         /// <summary>
         /// Buscar y elegir un Compresor
         /// </summary>
@@ -276,7 +276,7 @@ namespace Cotemar_CodeUI
             // Click 'Compresor de 34 DBi' pane
             Mouse.Click(uICompresorde34DBiPane1, new Point(117, 0));
         }
-
+        
         /// <summary>
         /// Salir y cerrar sesion
         /// </summary>
@@ -297,7 +297,7 @@ namespace Cotemar_CodeUI
             // Click link
             Mouse.Click(uIItemHyperlink, new Point(6, 21));
         }
-
+        
         /// <summary>
         /// Comprobra que existe Compresor Seleccionado
         /// </summary>
@@ -310,7 +310,7 @@ namespace Cotemar_CodeUI
             // Verify that the 'InnerText' property of 'El equipo es obligatorio. Equipo solic' pane contains 'Compresor de 34 DBi '
             StringAssert.Contains(uIElequipoesobligatoriPane.InnerText, this.ComprobrarSeleccionDeEquipoExpectedValues.UIElequipoesobligatoriPaneInnerText, "No  se selecciono equipo");
         }
-
+        
         #region Properties
         public virtual IngresarCotemarParams IngresarCotemarParams
         {
@@ -323,7 +323,7 @@ namespace Cotemar_CodeUI
                 return this.mIngresarCotemarParams;
             }
         }
-
+        
         public virtual Assert_PanelDeControlExpectedValues Assert_PanelDeControlExpectedValues
         {
             get
@@ -335,7 +335,7 @@ namespace Cotemar_CodeUI
                 return this.mAssert_PanelDeControlExpectedValues;
             }
         }
-
+        
         public virtual Assert_BandejaDeSolicitudesExpectedValues Assert_BandejaDeSolicitudesExpectedValues
         {
             get
@@ -347,7 +347,7 @@ namespace Cotemar_CodeUI
                 return this.mAssert_BandejaDeSolicitudesExpectedValues;
             }
         }
-
+        
         public virtual Assert_CrearNuevaSolicitudExpectedValues Assert_CrearNuevaSolicitudExpectedValues
         {
             get
@@ -359,7 +359,7 @@ namespace Cotemar_CodeUI
                 return this.mAssert_CrearNuevaSolicitudExpectedValues;
             }
         }
-
+        
         public virtual ComprobarEstadoBotonAgregarExpectedValues ComprobarEstadoBotonAgregarExpectedValues
         {
             get
@@ -371,7 +371,7 @@ namespace Cotemar_CodeUI
                 return this.mComprobarEstadoBotonAgregarExpectedValues;
             }
         }
-
+        
         public virtual ComprobarIncrementoIncrementoDeEquipoExpectedValues ComprobarIncrementoIncrementoDeEquipoExpectedValues
         {
             get
@@ -383,7 +383,7 @@ namespace Cotemar_CodeUI
                 return this.mComprobarIncrementoIncrementoDeEquipoExpectedValues;
             }
         }
-
+        
         public virtual EtiquetadeError1ExpectedValues EtiquetadeError1ExpectedValues
         {
             get
@@ -395,7 +395,7 @@ namespace Cotemar_CodeUI
                 return this.mEtiquetadeError1ExpectedValues;
             }
         }
-
+        
         public virtual EtiquetadeError2ExpectedValues EtiquetadeError2ExpectedValues
         {
             get
@@ -407,7 +407,7 @@ namespace Cotemar_CodeUI
                 return this.mEtiquetadeError2ExpectedValues;
             }
         }
-
+        
         public virtual EtiquetadeError3ExpectedValues EtiquetadeError3ExpectedValues
         {
             get
@@ -419,7 +419,7 @@ namespace Cotemar_CodeUI
                 return this.mEtiquetadeError3ExpectedValues;
             }
         }
-
+        
         public virtual BuscarComParams BuscarComParams
         {
             get
@@ -431,7 +431,7 @@ namespace Cotemar_CodeUI
                 return this.mBuscarComParams;
             }
         }
-
+        
         public virtual ComprobrarSeleccionDeEquipoExpectedValues ComprobrarSeleccionDeEquipoExpectedValues
         {
             get
@@ -443,7 +443,7 @@ namespace Cotemar_CodeUI
                 return this.mComprobrarSeleccionDeEquipoExpectedValues;
             }
         }
-
+        
         public UICOTEMARInternetExploWindow UICOTEMARInternetExploWindow
         {
             get
@@ -456,66 +456,66 @@ namespace Cotemar_CodeUI
             }
         }
         #endregion
-
+        
         #region Fields
         private IngresarCotemarParams mIngresarCotemarParams;
-
+        
         private Assert_PanelDeControlExpectedValues mAssert_PanelDeControlExpectedValues;
-
+        
         private Assert_BandejaDeSolicitudesExpectedValues mAssert_BandejaDeSolicitudesExpectedValues;
-
+        
         private Assert_CrearNuevaSolicitudExpectedValues mAssert_CrearNuevaSolicitudExpectedValues;
-
+        
         private ComprobarEstadoBotonAgregarExpectedValues mComprobarEstadoBotonAgregarExpectedValues;
-
+        
         private ComprobarIncrementoIncrementoDeEquipoExpectedValues mComprobarIncrementoIncrementoDeEquipoExpectedValues;
-
+        
         private EtiquetadeError1ExpectedValues mEtiquetadeError1ExpectedValues;
-
+        
         private EtiquetadeError2ExpectedValues mEtiquetadeError2ExpectedValues;
-
+        
         private EtiquetadeError3ExpectedValues mEtiquetadeError3ExpectedValues;
-
+        
         private BuscarComParams mBuscarComParams;
-
+        
         private ComprobrarSeleccionDeEquipoExpectedValues mComprobrarSeleccionDeEquipoExpectedValues;
-
+        
         private UICOTEMARInternetExploWindow mUICOTEMARInternetExploWindow;
         #endregion
     }
-
+    
     /// <summary>
     /// Parameters to be passed into 'IngresarCotemar'
     /// </summary>
     [GeneratedCode("Coded UITest Builder", "12.0.31101.0")]
     public class IngresarCotemarParams
     {
-
+        
         #region Fields
         /// <summary>
         /// Type 'admin@test.com' in 'Email' text box
         /// </summary>
         public string UIEmailEditText = "admin@test.com";
-
+        
         /// <summary>
         /// Type '{Tab}' in 'Email' text box
         /// </summary>
         public string UIEmailEditSendKeys = "{Tab}";
-
+        
         /// <summary>
         /// Type '********' in 'Password' text box
         /// </summary>
         public string UIPasswordEditPassword = "tfdHUD9qDmdw2rT8ErNKE0DjU7loMsy/";
         #endregion
     }
-
+    
     /// <summary>
     /// Parameters to be passed into 'Assert_PanelDeControl'
     /// </summary>
     [GeneratedCode("Coded UITest Builder", "12.0.31101.0")]
     public class Assert_PanelDeControlExpectedValues
     {
-
+        
         #region Fields
         /// <summary>
         /// Verify that the 'InnerText' property of 'Panel de control' pane equals 'Panel de control'
@@ -523,14 +523,14 @@ namespace Cotemar_CodeUI
         public string UIPaneldecontrolPane1InnerText = "Panel de control";
         #endregion
     }
-
+    
     /// <summary>
     /// Parameters to be passed into 'Assert_BandejaDeSolicitudes'
     /// </summary>
     [GeneratedCode("Coded UITest Builder", "12.0.31101.0")]
     public class Assert_BandejaDeSolicitudesExpectedValues
     {
-
+        
         #region Fields
         /// <summary>
         /// Verify that the 'InnerText' property of 'Bandeja de Solicitudes' pane equals 'Bandeja de Solicitudes'
@@ -538,14 +538,14 @@ namespace Cotemar_CodeUI
         public string UIBandejadeSolicitudesPane1InnerText = "Bandeja de Solicitudes";
         #endregion
     }
-
+    
     /// <summary>
     /// Parameters to be passed into 'Assert_CrearNuevaSolicitud'
     /// </summary>
     [GeneratedCode("Coded UITest Builder", "12.0.31101.0")]
     public class Assert_CrearNuevaSolicitudExpectedValues
     {
-
+        
         #region Fields
         /// <summary>
         /// Verify that the 'InnerText' property of 'Crear Nueva Solicitud' pane equals 'Crear Nueva Solicitud'
@@ -553,34 +553,34 @@ namespace Cotemar_CodeUI
         public string UICrearNuevaSolicitudPane1InnerText = "Crear Nueva Solicitud";
         #endregion
     }
-
+    
     /// <summary>
     /// Parameters to be passed into 'ComprobarEstadoBotonAgregar'
     /// </summary>
     [GeneratedCode("Coded UITest Builder", "12.0.31101.0")]
     public class ComprobarEstadoBotonAgregarExpectedValues
     {
-
+        
         #region Fields
         /// <summary>
         /// Verify that the 'Exists' property of 'Agregar Especificación de Equipo Incr' pane equals 'True'
         /// </summary>
         public bool UIAgregarEspecificacióPaneExists = true;
-
+        
         /// <summary>
         /// Verify that the 'Enabled' property of 'Agregar Especificación de Equipo Incr' pane equals 'True'
         /// </summary>
         public bool UIAgregarEspecificacióPaneEnabled = true;
         #endregion
     }
-
+    
     /// <summary>
     /// Parameters to be passed into 'ComprobarIncrementoIncrementoDeEquipo'
     /// </summary>
     [GeneratedCode("Coded UITest Builder", "12.0.31101.0")]
     public class ComprobarIncrementoIncrementoDeEquipoExpectedValues
     {
-
+        
         #region Fields
         /// <summary>
         /// Verify that the 'DisplayText' property of '× Incremento de Equipo' pane contains 'Incremento de Equipo'
@@ -588,14 +588,14 @@ namespace Cotemar_CodeUI
         public string UIIncrementodeEquipoPaneDisplayText = "Incremento de Equipo";
         #endregion
     }
-
+    
     /// <summary>
     /// Parameters to be passed into 'EtiquetadeError1'
     /// </summary>
     [GeneratedCode("Coded UITest Builder", "12.0.31101.0")]
     public class EtiquetadeError1ExpectedValues
     {
-
+        
         #region Fields
         /// <summary>
         /// Verify that the 'DisplayText' property of 'El equipo es obligatorio.' pane equals 'El equipo es obligatorio.'
@@ -603,14 +603,14 @@ namespace Cotemar_CodeUI
         public string UIElequipoesobligatoriPaneDisplayText = "El equipo es obligatorio.";
         #endregion
     }
-
+    
     /// <summary>
     /// Parameters to be passed into 'EtiquetadeError2'
     /// </summary>
     [GeneratedCode("Coded UITest Builder", "12.0.31101.0")]
     public class EtiquetadeError2ExpectedValues
     {
-
+        
         #region Fields
         /// <summary>
         /// Verify that the 'InnerText' property of 'La cantidad requerida es obligatoria.' pane equals 'La cantidad requerida es obligatoria.'
@@ -618,14 +618,14 @@ namespace Cotemar_CodeUI
         public string UILacantidadrequeridaePaneInnerText = "La cantidad requerida es obligatoria.";
         #endregion
     }
-
+    
     /// <summary>
     /// Parameters to be passed into 'EtiquetadeError3'
     /// </summary>
     [GeneratedCode("Coded UITest Builder", "12.0.31101.0")]
     public class EtiquetadeError3ExpectedValues
     {
-
+        
         #region Fields
         /// <summary>
         /// Verify that the 'InnerText' property of 'La fecha de término es obligatoria.' pane equals 'La fecha de término es obligatoria.'
@@ -633,14 +633,14 @@ namespace Cotemar_CodeUI
         public string UILafechadetérminoesobPaneInnerText = "La fecha de término es obligatoria.";
         #endregion
     }
-
+    
     /// <summary>
     /// Parameters to be passed into 'BuscarCom'
     /// </summary>
     [GeneratedCode("Coded UITest Builder", "12.0.31101.0")]
     public class BuscarComParams
     {
-
+        
         #region Fields
         /// <summary>
         /// Type 'Com' in 'value' text box
@@ -648,14 +648,14 @@ namespace Cotemar_CodeUI
         public string UIValueEditText = "Com";
         #endregion
     }
-
+    
     /// <summary>
     /// Parameters to be passed into 'ComprobrarSeleccionDeEquipo'
     /// </summary>
     [GeneratedCode("Coded UITest Builder", "12.0.31101.0")]
     public class ComprobrarSeleccionDeEquipoExpectedValues
     {
-
+        
         #region Fields
         /// <summary>
         /// Verify that the 'InnerText' property of 'El equipo es obligatorio. Equipo solic' pane contains 'Compresor de 34 DBi '
@@ -663,11 +663,11 @@ namespace Cotemar_CodeUI
         public string UIElequipoesobligatoriPaneInnerText = "Compresor de 34 DBi ";
         #endregion
     }
-
+    
     [GeneratedCode("Coded UITest Builder", "12.0.31101.0")]
     public class UICOTEMARInternetExploWindow : BrowserWindow
     {
-
+        
         public UICOTEMARInternetExploWindow()
         {
             #region Search Criteria
@@ -676,12 +676,12 @@ namespace Cotemar_CodeUI
             this.WindowTitles.Add("COTEMAR");
             #endregion
         }
-
+        
         public void LaunchUrl(System.Uri url)
         {
             this.CopyFrom(BrowserWindow.Launch(url));
         }
-
+        
         #region Properties
         public UICOTEMARDocument UICOTEMARDocument
         {
@@ -694,7 +694,7 @@ namespace Cotemar_CodeUI
                 return this.mUICOTEMARDocument;
             }
         }
-
+        
         public UICOTEMARDocument1 UICOTEMARDocument1
         {
             get
@@ -706,7 +706,7 @@ namespace Cotemar_CodeUI
                 return this.mUICOTEMARDocument1;
             }
         }
-
+        
         public UICOTEMARDocument2 UICOTEMARDocument2
         {
             get
@@ -718,7 +718,7 @@ namespace Cotemar_CodeUI
                 return this.mUICOTEMARDocument2;
             }
         }
-
+        
         public UICOTEMARDocument3 UICOTEMARDocument3
         {
             get
@@ -730,7 +730,7 @@ namespace Cotemar_CodeUI
                 return this.mUICOTEMARDocument3;
             }
         }
-
+        
         public UICOTEMARDocument4 UICOTEMARDocument4
         {
             get
@@ -743,26 +743,26 @@ namespace Cotemar_CodeUI
             }
         }
         #endregion
-
+        
         #region Fields
         private UICOTEMARDocument mUICOTEMARDocument;
-
+        
         private UICOTEMARDocument1 mUICOTEMARDocument1;
-
+        
         private UICOTEMARDocument2 mUICOTEMARDocument2;
-
+        
         private UICOTEMARDocument3 mUICOTEMARDocument3;
-
+        
         private UICOTEMARDocument4 mUICOTEMARDocument4;
         #endregion
     }
-
+    
     [GeneratedCode("Coded UITest Builder", "12.0.31101.0")]
     public class UICOTEMARDocument : HtmlDocument
     {
-
-        public UICOTEMARDocument(UITestControl searchLimitContainer) :
-            base(searchLimitContainer)
+        
+        public UICOTEMARDocument(UITestControl searchLimitContainer) : 
+                base(searchLimitContainer)
         {
             #region Search Criteria
             this.SearchProperties[HtmlDocument.PropertyNames.Id] = null;
@@ -774,7 +774,7 @@ namespace Cotemar_CodeUI
             this.WindowTitles.Add("COTEMAR");
             #endregion
         }
-
+        
         #region Properties
         public HtmlEdit UIEmailEdit
         {
@@ -798,7 +798,7 @@ namespace Cotemar_CodeUI
                 return this.mUIEmailEdit;
             }
         }
-
+        
         public HtmlEdit UIPasswordEdit
         {
             get
@@ -821,7 +821,7 @@ namespace Cotemar_CodeUI
                 return this.mUIPasswordEdit;
             }
         }
-
+        
         public UIEntrarPane UIEntrarPane
         {
             get
@@ -834,22 +834,22 @@ namespace Cotemar_CodeUI
             }
         }
         #endregion
-
+        
         #region Fields
         private HtmlEdit mUIEmailEdit;
-
+        
         private HtmlEdit mUIPasswordEdit;
-
+        
         private UIEntrarPane mUIEntrarPane;
         #endregion
     }
-
+    
     [GeneratedCode("Coded UITest Builder", "12.0.31101.0")]
     public class UIEntrarPane : HtmlDiv
     {
-
-        public UIEntrarPane(UITestControl searchLimitContainer) :
-            base(searchLimitContainer)
+        
+        public UIEntrarPane(UITestControl searchLimitContainer) : 
+                base(searchLimitContainer)
         {
             #region Search Criteria
             this.SearchProperties[HtmlDiv.PropertyNames.Id] = "login-box-inner";
@@ -862,7 +862,7 @@ namespace Cotemar_CodeUI
             this.WindowTitles.Add("COTEMAR");
             #endregion
         }
-
+        
         #region Properties
         public HtmlButton UIEntrarButton
         {
@@ -887,18 +887,18 @@ namespace Cotemar_CodeUI
             }
         }
         #endregion
-
+        
         #region Fields
         private HtmlButton mUIEntrarButton;
         #endregion
     }
-
+    
     [GeneratedCode("Coded UITest Builder", "12.0.31101.0")]
     public class UICOTEMARDocument1 : HtmlDocument
     {
-
-        public UICOTEMARDocument1(UITestControl searchLimitContainer) :
-            base(searchLimitContainer)
+        
+        public UICOTEMARDocument1(UITestControl searchLimitContainer) : 
+                base(searchLimitContainer)
         {
             #region Search Criteria
             this.SearchProperties[HtmlDocument.PropertyNames.Id] = null;
@@ -910,7 +910,7 @@ namespace Cotemar_CodeUI
             this.WindowTitles.Add("COTEMAR");
             #endregion
         }
-
+        
         #region Properties
         public UIPaneldecontrolPane UIPaneldecontrolPane
         {
@@ -923,7 +923,7 @@ namespace Cotemar_CodeUI
                 return this.mUIPaneldecontrolPane;
             }
         }
-
+        
         public UISidebarnavPane UISidebarnavPane
         {
             get
@@ -936,20 +936,20 @@ namespace Cotemar_CodeUI
             }
         }
         #endregion
-
+        
         #region Fields
         private UIPaneldecontrolPane mUIPaneldecontrolPane;
-
+        
         private UISidebarnavPane mUISidebarnavPane;
         #endregion
     }
-
+    
     [GeneratedCode("Coded UITest Builder", "12.0.31101.0")]
     public class UIPaneldecontrolPane : HtmlDiv
     {
-
-        public UIPaneldecontrolPane(UITestControl searchLimitContainer) :
-            base(searchLimitContainer)
+        
+        public UIPaneldecontrolPane(UITestControl searchLimitContainer) : 
+                base(searchLimitContainer)
         {
             #region Search Criteria
             this.SearchProperties[HtmlDiv.PropertyNames.Id] = "content-header";
@@ -962,7 +962,7 @@ namespace Cotemar_CodeUI
             this.WindowTitles.Add("COTEMAR");
             #endregion
         }
-
+        
         #region Properties
         public HtmlDiv UIPaneldecontrolPane1
         {
@@ -986,18 +986,18 @@ namespace Cotemar_CodeUI
             }
         }
         #endregion
-
+        
         #region Fields
         private HtmlDiv mUIPaneldecontrolPane1;
         #endregion
     }
-
+    
     [GeneratedCode("Coded UITest Builder", "12.0.31101.0")]
     public class UISidebarnavPane : HtmlDiv
     {
-
-        public UISidebarnavPane(UITestControl searchLimitContainer) :
-            base(searchLimitContainer)
+        
+        public UISidebarnavPane(UITestControl searchLimitContainer) : 
+                base(searchLimitContainer)
         {
             #region Search Criteria
             this.SearchProperties[HtmlDiv.PropertyNames.Id] = "sidebar-nav";
@@ -1010,7 +1010,7 @@ namespace Cotemar_CodeUI
             this.WindowTitles.Add("COTEMAR");
             #endregion
         }
-
+        
         #region Properties
         public HtmlHyperlink UISolicitudesHyperlink
         {
@@ -1037,18 +1037,18 @@ namespace Cotemar_CodeUI
             }
         }
         #endregion
-
+        
         #region Fields
         private HtmlHyperlink mUISolicitudesHyperlink;
         #endregion
     }
-
+    
     [GeneratedCode("Coded UITest Builder", "12.0.31101.0")]
     public class UICOTEMARDocument2 : HtmlDocument
     {
-
-        public UICOTEMARDocument2(UITestControl searchLimitContainer) :
-            base(searchLimitContainer)
+        
+        public UICOTEMARDocument2(UITestControl searchLimitContainer) : 
+                base(searchLimitContainer)
         {
             #region Search Criteria
             this.SearchProperties[HtmlDocument.PropertyNames.Id] = null;
@@ -1060,7 +1060,7 @@ namespace Cotemar_CodeUI
             this.WindowTitles.Add("COTEMAR");
             #endregion
         }
-
+        
         #region Properties
         public UIBandejadeSolicitudesPane UIBandejadeSolicitudesPane
         {
@@ -1073,7 +1073,7 @@ namespace Cotemar_CodeUI
                 return this.mUIBandejadeSolicitudesPane;
             }
         }
-
+        
         public UIContentwrapperPane UIContentwrapperPane
         {
             get
@@ -1085,7 +1085,7 @@ namespace Cotemar_CodeUI
                 return this.mUIContentwrapperPane;
             }
         }
-
+        
         public UILogoutFormCustom UILogoutFormCustom
         {
             get
@@ -1098,22 +1098,22 @@ namespace Cotemar_CodeUI
             }
         }
         #endregion
-
+        
         #region Fields
         private UIBandejadeSolicitudesPane mUIBandejadeSolicitudesPane;
-
+        
         private UIContentwrapperPane mUIContentwrapperPane;
-
+        
         private UILogoutFormCustom mUILogoutFormCustom;
         #endregion
     }
-
+    
     [GeneratedCode("Coded UITest Builder", "12.0.31101.0")]
     public class UIBandejadeSolicitudesPane : HtmlDiv
     {
-
-        public UIBandejadeSolicitudesPane(UITestControl searchLimitContainer) :
-            base(searchLimitContainer)
+        
+        public UIBandejadeSolicitudesPane(UITestControl searchLimitContainer) : 
+                base(searchLimitContainer)
         {
             #region Search Criteria
             this.SearchProperties[HtmlDiv.PropertyNames.Id] = "content-header";
@@ -1126,7 +1126,7 @@ namespace Cotemar_CodeUI
             this.WindowTitles.Add("COTEMAR");
             #endregion
         }
-
+        
         #region Properties
         public HtmlDiv UIBandejadeSolicitudesPane1
         {
@@ -1150,18 +1150,18 @@ namespace Cotemar_CodeUI
             }
         }
         #endregion
-
+        
         #region Fields
         private HtmlDiv mUIBandejadeSolicitudesPane1;
         #endregion
     }
-
+    
     [GeneratedCode("Coded UITest Builder", "12.0.31101.0")]
     public class UIContentwrapperPane : HtmlDiv
     {
-
-        public UIContentwrapperPane(UITestControl searchLimitContainer) :
-            base(searchLimitContainer)
+        
+        public UIContentwrapperPane(UITestControl searchLimitContainer) : 
+                base(searchLimitContainer)
         {
             #region Search Criteria
             this.SearchProperties[HtmlDiv.PropertyNames.Id] = "content-wrapper";
@@ -1174,7 +1174,7 @@ namespace Cotemar_CodeUI
             this.WindowTitles.Add("COTEMAR");
             #endregion
         }
-
+        
         #region Properties
         public HtmlButton UINuevaSolicitudButton
         {
@@ -1199,18 +1199,18 @@ namespace Cotemar_CodeUI
             }
         }
         #endregion
-
+        
         #region Fields
         private HtmlButton mUINuevaSolicitudButton;
         #endregion
     }
-
+    
     [GeneratedCode("Coded UITest Builder", "12.0.31101.0")]
     public class UILogoutFormCustom : HtmlCustom
     {
-
-        public UILogoutFormCustom(UITestControl searchLimitContainer) :
-            base(searchLimitContainer)
+        
+        public UILogoutFormCustom(UITestControl searchLimitContainer) : 
+                base(searchLimitContainer)
         {
             #region Search Criteria
             this.SearchProperties["TagName"] = "FORM";
@@ -1222,7 +1222,7 @@ namespace Cotemar_CodeUI
             this.WindowTitles.Add("COTEMAR");
             #endregion
         }
-
+        
         #region Properties
         public HtmlHyperlink UIItemHyperlink
         {
@@ -1249,18 +1249,18 @@ namespace Cotemar_CodeUI
             }
         }
         #endregion
-
+        
         #region Fields
         private HtmlHyperlink mUIItemHyperlink;
         #endregion
     }
-
+    
     [GeneratedCode("Coded UITest Builder", "12.0.31101.0")]
     public class UICOTEMARDocument3 : HtmlDocument
     {
-
-        public UICOTEMARDocument3(UITestControl searchLimitContainer) :
-            base(searchLimitContainer)
+        
+        public UICOTEMARDocument3(UITestControl searchLimitContainer) : 
+                base(searchLimitContainer)
         {
             #region Search Criteria
             this.SearchProperties[HtmlDocument.PropertyNames.Id] = null;
@@ -1272,7 +1272,7 @@ namespace Cotemar_CodeUI
             this.WindowTitles.Add("COTEMAR");
             #endregion
         }
-
+        
         #region Properties
         public UICrearNuevaSolicitudPane UICrearNuevaSolicitudPane
         {
@@ -1285,7 +1285,7 @@ namespace Cotemar_CodeUI
                 return this.mUICrearNuevaSolicitudPane;
             }
         }
-
+        
         public UIFormNuevaSolicitudCustom UIFormNuevaSolicitudCustom
         {
             get
@@ -1297,7 +1297,7 @@ namespace Cotemar_CodeUI
                 return this.mUIFormNuevaSolicitudCustom;
             }
         }
-
+        
         public UISeleccionauncontratoPane UISeleccionauncontratoPane
         {
             get
@@ -1309,7 +1309,7 @@ namespace Cotemar_CodeUI
                 return this.mUISeleccionauncontratoPane;
             }
         }
-
+        
         public UICboObra_chosenPane UICboObra_chosenPane
         {
             get
@@ -1322,24 +1322,24 @@ namespace Cotemar_CodeUI
             }
         }
         #endregion
-
+        
         #region Fields
         private UICrearNuevaSolicitudPane mUICrearNuevaSolicitudPane;
-
+        
         private UIFormNuevaSolicitudCustom mUIFormNuevaSolicitudCustom;
-
+        
         private UISeleccionauncontratoPane mUISeleccionauncontratoPane;
-
+        
         private UICboObra_chosenPane mUICboObra_chosenPane;
         #endregion
     }
-
+    
     [GeneratedCode("Coded UITest Builder", "12.0.31101.0")]
     public class UICrearNuevaSolicitudPane : HtmlDiv
     {
-
-        public UICrearNuevaSolicitudPane(UITestControl searchLimitContainer) :
-            base(searchLimitContainer)
+        
+        public UICrearNuevaSolicitudPane(UITestControl searchLimitContainer) : 
+                base(searchLimitContainer)
         {
             #region Search Criteria
             this.SearchProperties[HtmlDiv.PropertyNames.Id] = "content-header";
@@ -1352,7 +1352,7 @@ namespace Cotemar_CodeUI
             this.WindowTitles.Add("COTEMAR");
             #endregion
         }
-
+        
         #region Properties
         public HtmlDiv UICrearNuevaSolicitudPane1
         {
@@ -1376,18 +1376,18 @@ namespace Cotemar_CodeUI
             }
         }
         #endregion
-
+        
         #region Fields
         private HtmlDiv mUICrearNuevaSolicitudPane1;
         #endregion
     }
-
+    
     [GeneratedCode("Coded UITest Builder", "12.0.31101.0")]
     public class UIFormNuevaSolicitudCustom : HtmlCustom
     {
-
-        public UIFormNuevaSolicitudCustom(UITestControl searchLimitContainer) :
-            base(searchLimitContainer)
+        
+        public UIFormNuevaSolicitudCustom(UITestControl searchLimitContainer) : 
+                base(searchLimitContainer)
         {
             #region Search Criteria
             this.SearchProperties["TagName"] = "FORM";
@@ -1400,7 +1400,7 @@ namespace Cotemar_CodeUI
             this.WindowTitles.Add("COTEMAR");
             #endregion
         }
-
+        
         #region Properties
         public HtmlDiv UIAgregarEspecificacióPane
         {
@@ -1423,7 +1423,7 @@ namespace Cotemar_CodeUI
                 return this.mUIAgregarEspecificacióPane;
             }
         }
-
+        
         public HtmlButton UIAgregarEspecificacióButton
         {
             get
@@ -1446,7 +1446,7 @@ namespace Cotemar_CodeUI
                 return this.mUIAgregarEspecificacióButton;
             }
         }
-
+        
         public HtmlHyperlink UIIncrementoHyperlink
         {
             get
@@ -1472,22 +1472,22 @@ namespace Cotemar_CodeUI
             }
         }
         #endregion
-
+        
         #region Fields
         private HtmlDiv mUIAgregarEspecificacióPane;
-
+        
         private HtmlButton mUIAgregarEspecificacióButton;
-
+        
         private HtmlHyperlink mUIIncrementoHyperlink;
         #endregion
     }
-
+    
     [GeneratedCode("Coded UITest Builder", "12.0.31101.0")]
     public class UISeleccionauncontratoPane : HtmlDiv
     {
-
-        public UISeleccionauncontratoPane(UITestControl searchLimitContainer) :
-            base(searchLimitContainer)
+        
+        public UISeleccionauncontratoPane(UITestControl searchLimitContainer) : 
+                base(searchLimitContainer)
         {
             #region Search Criteria
             this.SearchProperties[HtmlDiv.PropertyNames.Id] = "cboContrato_chosen";
@@ -1501,7 +1501,7 @@ namespace Cotemar_CodeUI
             this.WindowTitles.Add("COTEMAR");
             #endregion
         }
-
+        
         #region Properties
         public HtmlCustom UIItemCustom
         {
@@ -1523,7 +1523,7 @@ namespace Cotemar_CodeUI
                 return this.mUIItemCustom;
             }
         }
-
+        
         public HtmlCustom UIItem009028340Custom
         {
             get
@@ -1546,20 +1546,20 @@ namespace Cotemar_CodeUI
             }
         }
         #endregion
-
+        
         #region Fields
         private HtmlCustom mUIItemCustom;
-
+        
         private HtmlCustom mUIItem009028340Custom;
         #endregion
     }
-
+    
     [GeneratedCode("Coded UITest Builder", "12.0.31101.0")]
     public class UICboObra_chosenPane : HtmlDiv
     {
-
-        public UICboObra_chosenPane(UITestControl searchLimitContainer) :
-            base(searchLimitContainer)
+        
+        public UICboObra_chosenPane(UITestControl searchLimitContainer) : 
+                base(searchLimitContainer)
         {
             #region Search Criteria
             this.SearchProperties[HtmlDiv.PropertyNames.Id] = "cboObra_chosen";
@@ -1573,7 +1573,7 @@ namespace Cotemar_CodeUI
             this.WindowTitles.Add("COTEMAR");
             #endregion
         }
-
+        
         #region Properties
         public HtmlCustom UIItemCustom
         {
@@ -1595,7 +1595,7 @@ namespace Cotemar_CodeUI
                 return this.mUIItemCustom;
             }
         }
-
+        
         public HtmlCustom UIExtracciondePetroleoCustom
         {
             get
@@ -1618,20 +1618,20 @@ namespace Cotemar_CodeUI
             }
         }
         #endregion
-
+        
         #region Fields
         private HtmlCustom mUIItemCustom;
-
+        
         private HtmlCustom mUIExtracciondePetroleoCustom;
         #endregion
     }
-
+    
     [GeneratedCode("Coded UITest Builder", "12.0.31101.0")]
     public class UICOTEMARDocument4 : HtmlDocument
     {
-
-        public UICOTEMARDocument4(UITestControl searchLimitContainer) :
-            base(searchLimitContainer)
+        
+        public UICOTEMARDocument4(UITestControl searchLimitContainer) : 
+                base(searchLimitContainer)
         {
             #region Search Criteria
             this.SearchProperties[HtmlDocument.PropertyNames.Id] = null;
@@ -1643,7 +1643,7 @@ namespace Cotemar_CodeUI
             this.WindowTitles.Add("COTEMAR");
             #endregion
         }
-
+        
         #region Properties
         public UIModalAgregarEquipoPane UIModalAgregarEquipoPane
         {
@@ -1656,7 +1656,7 @@ namespace Cotemar_CodeUI
                 return this.mUIModalAgregarEquipoPane;
             }
         }
-
+        
         public UIFormAgregarEquipoCustom UIFormAgregarEquipoCustom
         {
             get
@@ -1668,7 +1668,7 @@ namespace Cotemar_CodeUI
                 return this.mUIFormAgregarEquipoCustom;
             }
         }
-
+        
         public UIFormAgregarEquipoCustom1 UIFormAgregarEquipoCustom1
         {
             get
@@ -1680,7 +1680,7 @@ namespace Cotemar_CodeUI
                 return this.mUIFormAgregarEquipoCustom1;
             }
         }
-
+        
         public HtmlEdit UIValueEdit
         {
             get
@@ -1703,7 +1703,7 @@ namespace Cotemar_CodeUI
                 return this.mUIValueEdit;
             }
         }
-
+        
         public UITxtBuscar_dropdownPane UITxtBuscar_dropdownPane
         {
             get
@@ -1715,7 +1715,7 @@ namespace Cotemar_CodeUI
                 return this.mUITxtBuscar_dropdownPane;
             }
         }
-
+        
         public UIFormAgregarEquipoCustom2 UIFormAgregarEquipoCustom2
         {
             get
@@ -1727,7 +1727,7 @@ namespace Cotemar_CodeUI
                 return this.mUIFormAgregarEquipoCustom2;
             }
         }
-
+        
         public HtmlButton UICancelarButton
         {
             get
@@ -1750,7 +1750,7 @@ namespace Cotemar_CodeUI
                 return this.mUICancelarButton;
             }
         }
-
+        
         public HtmlHyperlink UIRegresaraBandejadeSoHyperlink
         {
             get
@@ -1775,7 +1775,7 @@ namespace Cotemar_CodeUI
                 return this.mUIRegresaraBandejadeSoHyperlink;
             }
         }
-
+        
         public UIFormAgregarEquipoCustom3 UIFormAgregarEquipoCustom3
         {
             get
@@ -1788,34 +1788,34 @@ namespace Cotemar_CodeUI
             }
         }
         #endregion
-
+        
         #region Fields
         private UIModalAgregarEquipoPane mUIModalAgregarEquipoPane;
-
+        
         private UIFormAgregarEquipoCustom mUIFormAgregarEquipoCustom;
-
+        
         private UIFormAgregarEquipoCustom1 mUIFormAgregarEquipoCustom1;
-
+        
         private HtmlEdit mUIValueEdit;
-
+        
         private UITxtBuscar_dropdownPane mUITxtBuscar_dropdownPane;
-
+        
         private UIFormAgregarEquipoCustom2 mUIFormAgregarEquipoCustom2;
-
+        
         private HtmlButton mUICancelarButton;
-
+        
         private HtmlHyperlink mUIRegresaraBandejadeSoHyperlink;
-
+        
         private UIFormAgregarEquipoCustom3 mUIFormAgregarEquipoCustom3;
         #endregion
     }
-
+    
     [GeneratedCode("Coded UITest Builder", "12.0.31101.0")]
     public class UIModalAgregarEquipoPane : HtmlDiv
     {
-
-        public UIModalAgregarEquipoPane(UITestControl searchLimitContainer) :
-            base(searchLimitContainer)
+        
+        public UIModalAgregarEquipoPane(UITestControl searchLimitContainer) : 
+                base(searchLimitContainer)
         {
             #region Search Criteria
             this.SearchProperties[HtmlDiv.PropertyNames.Id] = "modalAgregarEquipo";
@@ -1828,7 +1828,7 @@ namespace Cotemar_CodeUI
             this.WindowTitles.Add("COTEMAR");
             #endregion
         }
-
+        
         #region Properties
         public HtmlDiv UIIncrementodeEquipoPane
         {
@@ -1852,18 +1852,18 @@ namespace Cotemar_CodeUI
             }
         }
         #endregion
-
+        
         #region Fields
         private HtmlDiv mUIIncrementodeEquipoPane;
         #endregion
     }
-
+    
     [GeneratedCode("Coded UITest Builder", "12.0.31101.0")]
     public class UIFormAgregarEquipoCustom : HtmlCustom
     {
-
-        public UIFormAgregarEquipoCustom(UITestControl searchLimitContainer) :
-            base(searchLimitContainer)
+        
+        public UIFormAgregarEquipoCustom(UITestControl searchLimitContainer) : 
+                base(searchLimitContainer)
         {
             #region Search Criteria
             this.SearchProperties["TagName"] = "FORM";
@@ -1876,7 +1876,7 @@ namespace Cotemar_CodeUI
             this.WindowTitles.Add("COTEMAR");
             #endregion
         }
-
+        
         #region Properties
         public HtmlButton UIAgregaralasolicitudButton
         {
@@ -1901,18 +1901,18 @@ namespace Cotemar_CodeUI
             }
         }
         #endregion
-
+        
         #region Fields
         private HtmlButton mUIAgregaralasolicitudButton;
         #endregion
     }
-
+    
     [GeneratedCode("Coded UITest Builder", "12.0.31101.0")]
     public class UIFormAgregarEquipoCustom1 : HtmlCustom
     {
-
-        public UIFormAgregarEquipoCustom1(UITestControl searchLimitContainer) :
-            base(searchLimitContainer)
+        
+        public UIFormAgregarEquipoCustom1(UITestControl searchLimitContainer) : 
+                base(searchLimitContainer)
         {
             #region Search Criteria
             this.SearchProperties["TagName"] = "FORM";
@@ -1925,7 +1925,7 @@ namespace Cotemar_CodeUI
             this.WindowTitles.Add("COTEMAR");
             #endregion
         }
-
+        
         #region Properties
         public HtmlSpan UIElequipoesobligatoriPane
         {
@@ -1948,7 +1948,7 @@ namespace Cotemar_CodeUI
                 return this.mUIElequipoesobligatoriPane;
             }
         }
-
+        
         public HtmlSpan UILacantidadrequeridaePane
         {
             get
@@ -1971,7 +1971,7 @@ namespace Cotemar_CodeUI
                 return this.mUILacantidadrequeridaePane;
             }
         }
-
+        
         public HtmlSpan UILafechadetérminoesobPane
         {
             get
@@ -1994,22 +1994,22 @@ namespace Cotemar_CodeUI
             }
         }
         #endregion
-
+        
         #region Fields
         private HtmlSpan mUIElequipoesobligatoriPane;
-
+        
         private HtmlSpan mUILacantidadrequeridaePane;
-
+        
         private HtmlSpan mUILafechadetérminoesobPane;
         #endregion
     }
-
+    
     [GeneratedCode("Coded UITest Builder", "12.0.31101.0")]
     public class UITxtBuscar_dropdownPane : HtmlDiv
     {
-
-        public UITxtBuscar_dropdownPane(UITestControl searchLimitContainer) :
-            base(searchLimitContainer)
+        
+        public UITxtBuscar_dropdownPane(UITestControl searchLimitContainer) : 
+                base(searchLimitContainer)
         {
             #region Search Criteria
             this.SearchProperties[HtmlDiv.PropertyNames.Id] = "txtBuscar_dropdown";
@@ -2022,7 +2022,7 @@ namespace Cotemar_CodeUI
             this.WindowTitles.Add("COTEMAR");
             #endregion
         }
-
+        
         #region Properties
         public HtmlDiv UICompresorde34DBiPane
         {
@@ -2047,7 +2047,7 @@ namespace Cotemar_CodeUI
                 return this.mUICompresorde34DBiPane;
             }
         }
-
+        
         public HtmlDiv UICompresorde34DBiPane1
         {
             get
@@ -2070,20 +2070,20 @@ namespace Cotemar_CodeUI
             }
         }
         #endregion
-
+        
         #region Fields
         private HtmlDiv mUICompresorde34DBiPane;
-
+        
         private HtmlDiv mUICompresorde34DBiPane1;
         #endregion
     }
-
+    
     [GeneratedCode("Coded UITest Builder", "12.0.31101.0")]
     public class UIFormAgregarEquipoCustom2 : HtmlCustom
     {
-
-        public UIFormAgregarEquipoCustom2(UITestControl searchLimitContainer) :
-            base(searchLimitContainer)
+        
+        public UIFormAgregarEquipoCustom2(UITestControl searchLimitContainer) : 
+                base(searchLimitContainer)
         {
             #region Search Criteria
             this.SearchProperties["TagName"] = "FORM";
@@ -2096,7 +2096,7 @@ namespace Cotemar_CodeUI
             this.WindowTitles.Add("COTEMAR");
             #endregion
         }
-
+        
         #region Properties
         public HtmlDiv UIElequipoesobligatoriPane
         {
@@ -2120,18 +2120,18 @@ namespace Cotemar_CodeUI
             }
         }
         #endregion
-
+        
         #region Fields
         private HtmlDiv mUIElequipoesobligatoriPane;
         #endregion
     }
-
+    
     [GeneratedCode("Coded UITest Builder", "12.0.31101.0")]
     public class UIFormAgregarEquipoCustom3 : HtmlCustom
     {
-
-        public UIFormAgregarEquipoCustom3(UITestControl searchLimitContainer) :
-            base(searchLimitContainer)
+        
+        public UIFormAgregarEquipoCustom3(UITestControl searchLimitContainer) : 
+                base(searchLimitContainer)
         {
             #region Search Criteria
             this.SearchProperties["TagName"] = "FORM";
@@ -2144,7 +2144,7 @@ namespace Cotemar_CodeUI
             this.WindowTitles.Add("COTEMAR");
             #endregion
         }
-
+        
         #region Properties
         public HtmlDiv UIElequipoesobligatoriPane
         {
@@ -2168,7 +2168,7 @@ namespace Cotemar_CodeUI
             }
         }
         #endregion
-
+        
         #region Fields
         private HtmlDiv mUIElequipoesobligatoriPane;
         #endregion

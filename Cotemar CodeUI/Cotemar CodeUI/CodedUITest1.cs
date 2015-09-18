@@ -7,7 +7,6 @@ using System.Drawing;
 using Microsoft.VisualStudio.TestTools.UITesting;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Microsoft.VisualStudio.TestTools.UITest.Extension;
-using Microsoft.VisualStudio.TestTools.UITesting.HtmlControls;
 using Keyboard = Microsoft.VisualStudio.TestTools.UITesting.Keyboard;
 
 
@@ -19,23 +18,8 @@ namespace Cotemar_CodeUI
     [CodedUITest]
     public class CodedUITest1
     {
-
-        public IDictionary<string, HtmlControl> ElementDic;
-        Elementos TraerElementos = new Elementos();
         public CodedUITest1()
         {
-        }
-
-
-        public void HacerLogIn()
-        {
-            var uIEmailEdit = TraerElementos.GetDictionayElement<HtmlEdit>("uIEmailEdit");
-            var uIPasswordEdit = TraerElementos.GetDictionayElement<HtmlEdit>("uIPasswordEdit");
-            var uIEntrarButton = TraerElementos.GetDictionayElement<HtmlButton>("uIEntrarButton");
-            uIEmailEdit.Text = "admin@test.com";
-            uIPasswordEdit.Text = "$Test1234";
-            Mouse.Click(uIEntrarButton);
-
         }
 
         [TestMethod]
@@ -44,8 +28,6 @@ namespace Cotemar_CodeUI
             // To generate code for this test, select "Generate Code for Coded UI Test" from the shortcut menu and select one of the menu items.
             BrowserWindow IEWindow = BrowserWindow.Launch(new System.Uri("http://cotemaractivos.scio.local/"));
             this.UIMap.IngresarCotemar();
-            HacerLogIn();
-            /*this.UIMap.IngresarCotemar();
             this.UIMap.Assert_PanelDeControl();
             this.UIMap.AbrirSolicitudes();
             this.UIMap.Assert_BandejaDeSolicitudes();
@@ -60,15 +42,34 @@ namespace Cotemar_CodeUI
             this.UIMap.EtiquetadeError3();
             this.UIMap.BuscarCom();
             this.UIMap.ComprobrarSeleccionDeEquipo();
-            this.UIMap.SalirDeTodo();*/
+            this.UIMap.SalirDeTodo();
 
         }
 
         #region Additional test attributes
 
+        // You can use the following additional attributes as you write your tests:
+
+        ////Use TestInitialize to run code before running each test 
+        //[TestInitialize()]
+        //public void MyTestInitialize()
+        //{        
+        //    // To generate code for this test, select "Generate Code for Coded UI Test" from the shortcut menu and select one of the menu items.
+        //}
+
+        ////Use TestCleanup to run code after each test has run
+        //[TestCleanup()]
+        //public void MyTestCleanup()
+        //{        
+        //    // To generate code for this test, select "Generate Code for Coded UI Test" from the shortcut menu and select one of the menu items.
+        //}
+
         #endregion
 
-   
+        /// <summary>
+        ///Gets or sets the test context which provides
+        ///information about and functionality for the current test run.
+        ///</summary>
         public TestContext TestContext
         {
             get
